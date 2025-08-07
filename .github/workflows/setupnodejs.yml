@@ -1,13 +1,13 @@
 name: NodeJs Setup Workflow
 on: workflow_dispatch
 jobs:
-  java-setup:
+  node-setup:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.9.1
         with:
-          java-version: '10.15.1'
+          node-version: '10.15.1'
           distribution: microsoft
 
       - name: Print NodeJS Version
